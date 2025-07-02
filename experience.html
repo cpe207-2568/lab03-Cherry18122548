@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'DM Serif Text', serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('วอล.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 200vh;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        nav ul li a button {
+            padding: 8px 18px;
+            background: linear-gradient(45deg, #ff85b2, #ff69b4);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 1rem;
+            font-family: 'DM Serif Text', serif;
+        }
+
+        nav ul li a button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(45deg, #ff69b4, #ff85b2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #d6336c;
+            font-size: 2.5rem;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            line-height: 1.3;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 30px;
+        }
+
+        .card {
+            width: 300px;
+            background: linear-gradient(120deg, rgba(255, 255, 255, 0.9), rgba(255, 230, 240, 0.9));
+            border: 3px solid #ff69b4;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 2px solid #ff69b4;
+        }
+
+        .card p {
+            margin-top: 12px;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"><button>Home</button></a></li>
+            <li><a href="Experience.html"><button>Experience</button></a></li>
+            <li><a href="gallery.html"><button>Gallery</button></a></li>
+            <li><a href="contact.html"><button>Contact Me</button></a></li>
+        </ul>
+    </nav>
+
+    <h1>Experience</h1>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="baboon.png" alt="My project" />
+            <div class="card-body">
+                <p>I worked on a C++ project during my first year.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="เกม.png" alt="My project" />
+            <div class="card-body">
+                <p>I developed a Scratch game as a project in my first year.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
